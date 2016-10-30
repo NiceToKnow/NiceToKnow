@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Nice To Know : Collaborative Mind Maps of Stuff thats nice to know">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Nice To Know</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/NiceToKnow/NiceToKnow">View on GitHub</a>
+
+          <h1 id="project_title">Nice To Know</h1>
+          <h2 id="project_tagline">Collaborative Mind Maps of Stuff thats nice to know</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/NiceToKnow/NiceToKnow/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/NiceToKnow/NiceToKnow/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="nice-to-know" class="anchor" href="#nice-to-know" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Nice To Know</h1>
+
+<p>This is a collection of mind maps of stuff that is nice to know</p>
+
+<h1>
+<a id="about-what" class="anchor" href="#about-what" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>…about what?</h1>
+
+<p>Everything! We started with IT, because we're IT-guys, but you can create any repo you know things about!</p>
+
+<h1>
+<a id="github--folders--collaborative-mind-map" class="anchor" href="#github--folders--collaborative-mind-map" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub + Folders = Collaborative Mind Map</h1>
+
+<p>Mind maps should be easy. Collaborative mind maps usually are not, because the underlying structure is unclear and the tools for versioning are bad. But why not use already existing tools that are great?</p>
+
+<pre><code>underlying structure =&gt; folders and files
+versioning =&gt; git
+</code></pre>
+
+<p>To connect those two, we use a little helper called <a href="http://gohugo.io/">Hugo</a>. It creates web-pages from folders and markdown files.</p>
+
+<h1>
+<a id="is-there-a-preferred-structure" class="anchor" href="#is-there-a-preferred-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Is there a preferred structure?</h1>
+
+<p>Yes, there is, and it is needed for Hugo to create the proper connections:</p>
+
+<pre><code>root
+├── content (the source files)
+│   ├── Topic A
+│   │    ├── Topic A.md (a description of that topic)
+│   │    └── Subtopic 1
+│   │        ├── Subtopic 1.md (a description of the subtopic)
+│   │        ├── Sub-Subtopic X.md (a description of the sub-subtopic)
+│   │        ├── Sub-Subtopic Y.md (a description of the sub-subtopic)
+│   │        └── Sub-Subtopic Z.md (a description of the sub-subtopic)
+│   ├── Topic B 
+│   │    └── ...
+├── public (the generated files)
+├── themes
+│   ├── folderMap (the basis for html output)
+├── deploy.sh (to make your life easier)
+└── ...
+</code></pre>
+
+<p>You will only work in the <code>content</code> folder, and that structure should be very easy (otherwise simplify it!) :)</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Nice To Know maintained by <a href="https://github.com/NiceToKnow">NiceToKnow</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
