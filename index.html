@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.17" />
+	<meta charset="UTF-8">
+	<title>Nice To Know</title>
+    <link rel="stylesheet" href="https://nicetoknow.github.io/css.css" type="text/css" >
+</head>
+<body >
+
+
+    
+
+<h1 id="nice-to-know">Nice To Know</h1>
+
+<p>This is a collection of mind maps of stuff that is nice to know.</p>
+
+<h2 id="about-what">…about what?</h2>
+
+<p>Everything! We started with IT, because we&rsquo;re IT-guys, but you can create any repo you know things about!</p>
+
+<p>See the list of repositories here: <a href="https://github.com/NiceToKnow">https://github.com/NiceToKnow</a></p>
+
+<h2 id="github-folders-collaborative-mind-map">GitHub + Folders = Collaborative Mind Map</h2>
+
+<p>Mind maps should be easy. Collaborative mind maps usually are not, because the underlying structure is unclear and the tools for versioning are bad. But why not use already existing tools that are great?</p>
+
+<pre><code>underlying structure =&gt; folders and files
+versioning =&gt; git
+</code></pre>
+
+<p>To connect those two, we use a little helper called <a href="http://gohugo.io/">Hugo</a>. It creates web-pages from folders and markdown files.</p>
+
+<h2 id="is-there-a-preferred-structure">Is there a preferred structure?</h2>
+
+<p>Yes, there is, and it is needed for Hugo to create the proper connections:</p>
+
+<pre><code>root
+├── content (the source files)
+│   ├── Topic A
+│   │    ├── Topic A.md (a description of that topic)
+│   │    └── Subtopic 1
+│   │        ├── Subtopic 1.md (a description of the subtopic)
+│   │        ├── Sub-Subtopic X.md (a description of the sub-subtopic)
+│   │        ├── Sub-Subtopic Y.md (a description of the sub-subtopic)
+│   │        └── Sub-Subtopic Z.md (a description of the sub-subtopic)
+│   ├── Topic B 
+│   │    └── ...
+├── public (the generated files)
+├── themes
+│   ├── folderMap (the basis for html output)
+├── deploy.sh (to make your life easier)
+└── ...
+</code></pre>
+
+<p>You will only work in the <code>content</code> folder, and that structure should be very easy (otherwise simplify it!) :)</p>
+
+
+
+</body>
+</html>
